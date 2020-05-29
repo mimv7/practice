@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProfiCSS</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 id="page-title" class="title">
+        Профессиональная техника для обжарщиков
+      </h1>
+      <!-- шапка сайта  -->
+      <nav>
+        <ul id="main-nav" class="nav">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Ростеры</a></li>
+          <li><a href="#">Кофеварки</a></li>
+          <li>
+            <a
+              href="specials.html"
+              class="featured"
+              style="background-color: orange;"
+              >Акции</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>
+        обязательно проверьте раздел с
+        <a href="specials.html" class="featured">нашими акциями</a>
+      </p>
+    </main>
+    <div class="block1 block"></div>
+    <div class="block2 block">
+      <iframe class="frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2c4a2863e006e3649efa327483b98205ecb48dc3c21e070a76e078fde2cd564&amp;source=constructor" width="334" height="309" frameborder="0"></iframe>
+    </div>
+    <div class="block3 block">
+      <form action="sql.php" method="POST">
+        <input type="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-xxx-xxx-xx-xx" maxlength="15"/>телефон</form>
+      </form>
+    </div>
+    <footer class="footer" class="block">
+      &copy; 2020 Профессиональная техника для обжарщиков &mdash;
+      <a href="terms-of-use.html">Условия эксплуатации</a>
+    </footer>
+  </body>
+</html>
