@@ -16,16 +16,21 @@ h1{
     padding-left: 0;
 }
 
-#main-nav li{
+li{
     display: inline-block;/*отображение элементов в линию*/
 }
 
 #main-nav a{
     color: white;
     background-color: #13a4a4;
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 2px;
     text-decoration: none;
+}
+
+.nav li a#featured{
+    background-color: orange;
+    box-shadow: 10px 2px #6f9090;
 }
 .page-header{
     width: 100%;
