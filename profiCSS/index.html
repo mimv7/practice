@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProfiCSS</title>
+    <title>Help-css</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="page-header">
       <h1 id="page-title" class="title">
-        Профессиональная техника для обжарщиков
+        Каскадность и приоритеты (ID,class,тег)
       </h1>
       <!-- шапка сайта  -->
       <nav>
@@ -27,41 +27,97 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <p>
         обязательно проверьте раздел с
         <a href="specials.html" id="featured">нашими акциями</a>
       </p>
     </main>
+
     <div class="flex">
-    <div class="block1 block">
-      <div class="header__conteiner">Бегущий город</div>
-       <div class="conteiner">
-        <main class="main__cont">
-          <h2>Прибегайте!</h2>
-          <p>Начало мероприятия "Бугущий город" в субботу в 10:00
+      <div class="block1 block">
+      <div class="header__conteiner">
+        Блочная модель
+      </div>
+      <div class="conteiner">
+          <main class="main__cont">
+            <h2>Прибегайте!</h2>
+            <p>Начало мероприятия "Бугущий город" в субботу в 10:00
             на площади Ленина. Маршрут будет представлен перед началом
             пробега, расстояние около 10 км
-          </p>
-         </main>
-        <div class="sidebar">
-          <a href="#" class="button__link">Мы в Twitter</a>
-          <a href="#" class="button__link">Мы в Facebook</a>
-        </div>
+            </p>
+          </main>
+          <div class="sidebar">
+            <a href="https://vk.com/romanmels" target="_blank" class="button__link">Мы в VK</a>
+            <a href="https://ok.ru/profile/559272829419" target="_blank" class="button__link">Мы в Одноклассниках</a>
+            <a href="" class="sponsor__link">спонсорская ссылка</a>
+          </div>
+      </div>
       </div>
     </div>
+
+    <div class="conteiner__clearfix">
+            <div class="header__clearfix">
+              <h1>Плавающие элементы</h1>
+            </div>
+            <div class="main__clearfix clearfix">
+              <h2>Полезные советы</h2>
+              <div>
+                <div class="media">
+                  <img class="media__image" src="image/Без названия.jpg" alt="">
+                  <div class="media__body">
+                    <h4>Физкультура</h4>
+                    <p>Физическая подготовка &mdash; важная состовляющая 
+                      профилактики травматизма.иСосредоточтесь на своемтеле &mdash;особенно на ногах
+                    </p>
+                  </div>
+                </div>
+                         
+                <div class="media">
+                  <img class="media__image" src="image/Без названия.jpg" alt="">
+                  <div class="media__body">
+                    <h4>темп</h4>
+                    <p>Каков ваш темп? Темп самых успешных бегунов - около 180 шагов  в минуту
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="media">
+                  <img class="media__image" src="image/Без названия.jpg" alt="">
+                  <div class="media__body">
+                    <h4>Меняйтесь</h4>
+                    <p>Не бегайте каждый раз одинаково. Меняйте темп бега, маршрут и расстояние
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="media">
+                  <img class="media__image" src="image/Без названия.jpg" alt="">
+                  <div class="media__body">
+                    <h4>Фокусируйтесь на беге</h4>
+                    <p>Бегите быстро, но без излишнего напряжения. Ноги должны касаться 
+                      земли под вашими бедрами, а не впереди вас
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+    
+    </div>
+
     <div class="block2 block">
-      <p>второй блок</p>
+      
     </div>
+
     <div class="block3 block">
-      <form action="sql.php" method="POST">
-        <input type="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-xxx-xxx-xx-xx" maxlength="15"/>телефон</form>
-      </form>
+      <p>третий блок</p>
     </div>
-    </div>
+
     <footer class="footer" class="block">
       &copy; сайт не для коммерческого использования &mdash;
-      <a href="terms-of-use.html">Условия эксплуатации</a>
+      <a href="terms-of-use.html">Ссылка</a>
     </footer>
   </body>
 </html>
