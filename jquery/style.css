@@ -1,0 +1,21 @@
+#change__me{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    font: 24px arial;
+}
+
+#move__up #move__down #color #disappear{
+    padding: 5px;
+}
+
+.next{
+    position: absolute;
+    bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+

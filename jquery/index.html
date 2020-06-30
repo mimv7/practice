@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    <button id="move__up">Move up</button>
+    <button id="move__down">Move down</button>
+    <button id="color">change color</button>
+    <button id="disappear">desappear</button>
+    <div id="change__me">Make Me Do Stuff</div>
+    <div class="next">
+        <a href="lesson1.html">lesson 1</a>
+        <a href="lesson2.html">lesson 2</a>
+        <a href="lesson3.html">lesson 3</a>
+        <a href="">lesson 4</a>
+        <a href="">lesson 5</a>
+        <a href="">lesson 6</a>
+        <a href="">lesson 7</a>
+        <a href="">lesson 8</a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#move__up").click(function(){
+                $("#change__me").animate({top:30},200);
+            })
+            $("move__down").click(function(){
+                $("change__me").animate({top:500},2000);
+            })
+            $("#color").click(function(){
+                $("change__me").css("color","purple");
+            })
+            $("#disappear").click(function(){
+                $("#change__me").toggle("slow");
+            })
+        })
+    </script>
+    
+</body>
+</html>
