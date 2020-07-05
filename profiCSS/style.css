@@ -142,14 +142,46 @@ main{
     border-radius: .5em;
 }
 
+.media__block{
+    clear: both;
+}
+
 .media{
     float: left;
-    width: 50%;
+    margin: 0 1.5em 1.5em 0;
+    width:47%;
     padding: 1.5em;
     background-color: #eee;
     border-radius: 0.5em;
 }
 
+
+.media__image{
+    float: left;/*выравнивание по левому краю*/
+    margin-right: 1.5em;
+}
+.media__body{
+    margin-top: 0;/*удаление верхнего поля*/
+    overflow: auto;/*что тело не накладывалось на плаваюее изображение*/
+}
+.media__body h4{
+    margin-top: 0;/*переопределение верхнео поля*/
+}
+
+
+
+.media:nth-child(odd){
+    clear: left;/*каждая строка сбрасывает обтекание предшествующей строки*/
+}
+
+.clearfix::before,
+.clearfix::after{
+    display: table;/*предотвращаем схлопывание полей*/
+    content: " ";
+}
+.clearfix::after{
+    clear: both;/*только after нуждается в сбросе полей*/
+}
 
 .block2{
     background-color: lightcoral;
