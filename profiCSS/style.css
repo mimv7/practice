@@ -26,7 +26,10 @@ h1{
     list-style:none ;
     padding-left: 0;
 }
-
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 li{
     display: inline-block;/*отображение элементов в линию*/
 }
@@ -248,10 +251,9 @@ main{
 .block3{
     background-color: lightslategrey;
     width: 100%;
+    padding: 2.5em;
 }
-.ymaps-2-1-76-map{
-    padding-left: 50% 0;
-}
+
 
 a:link{
     color: blue;

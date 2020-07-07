@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Help-css</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="image/favicon.ico.png" type="image/png">
   </head>
   <body>
     <header class="page-header">
       <h1 id="page-title" class="title">
-        Каскадность и приоритеты (ID,class,тег)
+        МРВ
       </h1>
       <!-- шапка сайта  -->
       <nav>
         <ul id="main-nav" class="nav">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Ростеры</a></li>
+          <li><a href="#block2">css-сетки</a></li>
+          <li><a href="flex.html">Flexbox-верстка</a></li>
           <li><a href="#">Кофеварки</a></li>
           <li>
             <a
@@ -26,6 +27,9 @@
           </li>
         </ul>
       </nav>
+      <h1 id="page-title" class="title">
+        Здесь можно наблюдать каскадность и приоритеты (ID,class,тег)
+      </h1>
     </header>
 
     <main>
@@ -43,15 +47,14 @@
       <div class="conteiner">
           <main class="main__cont">
             <h2>Прибегайте!</h2>
-            <p>Начало мероприятия "Бугущий город" в субботу в 10:00
-            на площади Ленина. Маршрут будет представлен перед началом
-            пробега, расстояние около 10 км
+            <p>Данный сайт является помощником для верстальщика
+              . Маленикие хитрости расписанны в комментариях кода 
             </p>
           </main>
           <div class="sidebar">
             <a href="https://vk.com/romanmels" target="_blank" class="button__link">Мы в VK</a>
             <a href="https://ok.ru/profile/559272829419" target="_blank" class="button__link">Мы в Одноклассниках</a>
-            <a href="" class="sponsor__link">спонсорская ссылка</a>
+            <a href="" class="sponsor__link">пример ссылки</a>
           </div>
       </div>
       </div>
@@ -108,7 +111,7 @@
     
     </div>
 
-    <div class="block2 block">
+    <div class="block2 block" id="block2">
 
       <div class="conteiner__clearfix">
         <div class="header__clearfix">
@@ -171,12 +174,11 @@
     </div>
 
     <div class="block3 block">
-      <p>третий блок</p>
+      <h1><a href="flex.html">Flexbox-верстка(ссылка)</a></h1>
     </div>
 
     <footer class="footer" class="block">
-      &copy; сайт не для коммерческого использования &mdash;
-      <a href="terms-of-use.html">Ссылка</a>
+      &copy; сайт не для коммерческого использования &mdash;МРВ
     </footer>
   </body>
 </html>
