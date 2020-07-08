@@ -52,21 +52,41 @@ body * + *{
     margin-left: auto;/*отталкивает элемент от левого бока*/
 }
 
+.flex{
+    display: flex;
+}
 
+.flex>*+*{
+    margin-top: 0;/*удаление верхнего поля */
+    margin-left: 1.5em;
+}
+
+.tile{
+    padding: 1.5em;
+    background-color: #fff;
+}
+
+.column__main{
+    flex: 2;/*сокращенная запись от flex:2 0 0%*/
+}
+
+.column__sidebar{
+    flex: 1;/*flex:grow flex:shrink flex:basic*/
+}
 
 
 
 .site__nav>li>a:link{
-
+    font-size: inherit;
 }
 .site__nav>li>a:visited{
-    
+    font-size: inherit;
 }
 .site__nav>li>a:hover{
     background-color: rgb(124, 178, 250);
     color: rgb(148, 74, 0);
 }
 .site__nav>li>a:active{
-
+    font-size: inherit;
 }
 
