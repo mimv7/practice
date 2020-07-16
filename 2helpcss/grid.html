@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help-css/grid</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="shortcut icon" href="image/favicon.ico.png" type="image/png">
+</head>
+<body>
+    
+    <div class="conteiner">
+        <header>
+            <h1 class="page__heading">Grid</h1>
+        </header>
+        <nav>
+            <ul class="site__nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="">второй блок</a></li>
+                <li><a href="">третий блок</a></li>
+                <li><a href="">четвертый блок</a></li>
+                <li class="nav__right"><a href="">правый блок</a></li>
+            </ul>
+        </nav>
+        <main class="main tile">
+            <h1>Корректная верстка поможет легче работать с сайтом</h1>
+            <p>Тысячи людей пользуются сайтами, а лишь некоторые делают сайты. 
+                Заходи в панель разработчика чтобы посмотреть как применяются те или иные свойства.</p>
+        </main>
+        <div class="sidebar__top tile">
+            <form class="login__form" action="*">
+                <h3>Авторизация</h3>
+                <p>
+                    <label for="username">Логин</label>
+                    <input id="username" type="text" name="username"/>
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input id="password" type="password" name="password">
+                </p>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+        <div class="sidebar__bottom tile centered">
+            <small>Тарифные планы от</small>
+            <div class="cost">
+                <span class="cost__currency">$</span>
+                <span class="cost__roubles">123</span>
+                <span class="cost__kopecks">.00</span>
+            </div>
+            <a class="cta__button" href="index.html">Зарегистрироваться</a>
+        </div>
+    </div>
+
+<!-- это тестовая часть работы grid
+<div class="grid">
+    <div class="1">1</div>
+    <div class="2">2</div>
+    <div class="3">3</div>
+    <div class="4">4</div>
+    <div class="5">5</div>
+    <div class="6">6</div>
+</div>
+-->
+</body>
+</html>

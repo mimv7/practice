@@ -1,0 +1,72 @@
+/*.grid{
+    display: grid;контейнер сетки
+    /*grid-template-columns: 1fr 1fr 1fr;определяем количество колонок
+    /*grid-template-rows: 1fr 1fr;количество строк
+    /*grid-gap: .5em;отступы между ячейками
+}
+
+.grid>*{
+    background-color: darkgrey;
+    color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+*/
+
+
+:root{
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after{
+    box-sizing:inherit;
+}
+
+body{
+    background-color: #3372a7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4,auto);/* определяем 4 полосы с авто размером*/
+    grid-gap: 1.5em;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header,nav{
+    grid-column: 1/3;/*занимает между линиями сетки 1 и 3*/
+    grid-row: span 1;/*совпадает с одной горизонтальной сеткой*/
+}
+
+.main{
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+.sidebar__top{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.sidebar__bottom{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.tile{
+    padding: 1.5em;
+    background-color: #fff;
+}
+
+.tile>:first-child{
+    margin-top: 0;
+}
+
+.title *+*{
+    margin-top: 1.5em;
+}

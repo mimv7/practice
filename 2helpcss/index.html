@@ -1,184 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help-css</title>
-    <link href="style.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help-css</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/favicon.ico.png" type="image/png">
-  </head>
-  <body>
-    <header class="page-header">
-      <h1 id="page-titlee" class="title">
-        МРВ
-      </h1>
-      <!-- шапка сайта  -->
-      <nav>
-        <ul id="main-nav" class="nav">
-          <li><a href="#block2">css-сетки</a></li>
-          <li><a href="flex.html">Flexbox-верстка</a></li>
-          <li><a href="#">Кофеварки</a></li>
-          <li>
-            <a
-              href="specials.html"
-              id="featured"
-              >Акции</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <h1 class="title">
-        Здесь можно наблюдать каскадность и приоритеты (ID,class,тег)
-      </h1>
-    </header>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h2>МРВ</h2>
+        </header>
+        <nav>
+            <ul class="site__nav"><!--флекс контейнер-->
+                <li><a href="index.html">Главная</a></li><!--флекс элементы-->
+                <li><a href="cascading.html">каскадность</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="support">Поддержка</a></li>
+                <li class="nav__right"><a href="https://vk.com/romanmels">О нас</a></li>
+            </ul>
+        </nav>
+        <main class="flex">
+            <div class="column__main tile">
+                <h1>Корректная верстка поможет легче работать с сайтом</h1>
+                <p>
+                    Тысячи людей пользуются сайтами, а лишь некоторые делают сайты. 
+                    Заходи в панель разработчика чтобы посмотреть как применяются те или иные свойства.
+                </p>
+            </div>
+            <div class="column__sidebar">
+                <div class="tile">
+                    <form class="login__form" action="sql.php">
+                        <h3>Авторизация</h3>
+                        <p>
+                            <label for="username">Логин:</label>
+                            <input type="text" id="username" name="username"/>
+                        </p>
+                        <p>
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" name="password"/>
+                        </p>
 
-    <main>
-      <p>
-        обязательно проверьте раздел с
-        <a href="specials.html" >нашими акциями</a>
-      </p>
-    </main>
 
-    <div class="flex">
-      <div class="block1 block">
-      <div class="header__conteiner">
-        Блочная модель
-      </div>
-      <div class="conteiner">
-          <div class="main__cont">
-            <h2>Прибегайте!</h2>
-            <p>Данный сайт является помощником для верстальщика
-              . Маленикие хитрости расписанны в комментариях кода 
-            </p>
-          </div>
-          <div class="sidebar">
-            <a href="https://vk.com/romanmels" target="_blank" class="button__link">Мы в VK</a>
-            <a href="https://ok.ru/profile/559272829419" target="_blank" class="button__link">Мы в Одноклассниках</a>
-            <a href="" class="sponsor__link">пример ссылки</a>
-          </div>
-      </div>
-      </div>
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
+                <div class="tile centered">
+                    <small>Свойства justify-content и align-items</small>
+                    <div class="cost">
+                        <span class="cost__currency">$</span>
+                        <span class="cost__roubles">123</span>
+                        <span class="cost__kopecks">.00</span>
+                    </div>
+                    <a class="cta__button" href="">Зарегистрироваться</a>
+                    <a href="index.html">вернуться в начало</a>
+                </div>
+            </div>
+
+        </main>
     </div>
-
-    <div class="conteiner__clearfix">
-            <div class="header__clearfix">
-              <h1>Плавающие элементы</h1>
-            </div>
-            <div class="main__clearfix clearfix">
-              <h2>Полезные советы</h2>
-              <div class="media__block">
-                <div class="media">
-                  <img class="media__image" src="image/run.jpg" width="80" alt="">
-                  <div class="media__body">
-                    <h4>Физкультура</h4>
-                    <p>Физическая подготовка &mdash; важная состовляющая 
-                      профилактики травматизма.иСосредоточтесь на своемтеле &mdash;особенно на ногах
-                    </p>
-                  </div>
-                </div>
-                         
-                <div class="media">
-                  <img class="media__image" src="image/run.jpg" width="80" alt="">
-                  <div class="media__body">
-                    <h4>темп</h4>
-                    <p>Каков ваш темп? Темп самых успешных бегунов - около 180 шагов  в минуту
-                    </p>
-                  </div>
-                </div>
-  
-                <div class="media">
-                  <img class="media__image" src="image/run.jpg" width="80" alt="">
-                  <div class="media__body">
-                    <h4>Меняйтесь</h4>
-                    <p>Не бегайте каждый раз одинаково. Меняйте темп бега, маршрут и расстояние
-                    </p>
-                  </div>
-                </div>
-            
-                <div class="media">
-                  <img class="media__image" src="image/run.jpg" width="80" alt="">
-                  <div class="media__body">
-                    <h4>Фокусируйтесь на беге</h4>
-                    <p>Бегите быстро, но без излишнего напряжения. Ноги должны касаться 
-                      земли под вашими бедрами, а не впереди вас
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--<div style="clear: both;"></div>растягиваем блок учитывая плавающие 
-                элементы, но лучше использовать ::before-->
-            </div>
     
-    </div>
-
-    <div class="block2 block" id="block2">
-
-      <div class="conteiner__clearfix">
-        <div class="header__clearfix">
-          <h1>css сетки</h1>
-        </div>
-        <div class="main__clearfix clearfix">
-          <h2>Полезные советы</h2>
-          <div class="row">
-            <div class="column-6">
-              <div class="media__col">
-                <img class="media__image__col" src="image/run.jpg" width="80" alt="">
-                <div class="media__body__col">
-                  <h4>Физкультура</h4>
-                  <p>Физическая подготовка &mdash; важная состовляющая 
-                  профилактики травматизма.иСосредоточтесь на своемтеле &mdash;особенно на ногах
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="column-6">      
-              <div class="media__col">
-                <img class="media__image__col" src="image/run.jpg" width="80" alt="">
-                <div class="media__body__col">
-                  <h4>темп</h4>
-                  <p>Каков ваш темп? Темп самых успешных бегунов - около 180 шагов  в минуту
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="column-6">
-              <div class="media__col">
-                <img class="media__image__col" src="image/run.jpg" width="80" alt="">
-                <div class="media__body__col">
-                  <h4>Меняйтесь</h4>
-                  <p>Не бегайте каждый раз одинаково. Меняйте темп бега, маршрут и расстояние
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="column-6">
-              <div class="media__col">
-                <img class="media__image__col" src="image/run.jpg" width="80" alt="">
-                <div class="media__body__col">
-                  <h4>Фокусируйтесь на беге</h4>
-                  <p>Бегите быстро, но без излишнего напряжения. Ноги должны касаться 
-                  земли под вашими бедрами, а не впереди вас
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--<div style="clear: both;"></div>растягиваем блок учитывая плавающие 
-            элементы, но лучше использовать ::before-->
-        </div>
-      </div>
-    </div>
-
-    <div class="block3 block">
-      <h1><a href="flex.html">Flexbox-верстка(ссылка)</a></h1>
-    </div>
-
-    <footer class="footer block">
-      &copy; сайт не для коммерческого использования &mdash;МРВ
-    </footer>
-  </body>
+</body>
 </html>
