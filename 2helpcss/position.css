@@ -1,0 +1,66 @@
+
+:root{
+    box-sizing: border-box;/*убираем margin*/
+}
+
+*,
+::before,
+::after{
+    box-sizing:inherit;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 200vh;/*добавляем полосу прокрутки для демонстрации*/
+    margin: 0;
+}
+
+button{
+    padding: .5em .7em;
+    border: 1px solid #8d8d8d;
+    background-color: white;
+    font-size: 1em;
+}
+
+.top__banner{
+    padding: 1em 0;
+    background-color: #ffd698;
+}
+
+.top__banner__inner{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.modal{
+    display: none;/*js устанавливает display:block*/
+}
+
+.modal__backdrop{
+    position: fixed;/*подложка под баннер*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba( 0, 0, 0, 0.5) ;
+}
+
+.modal__body{
+    position: fixed;
+    top: 3em;
+    bottom: 3em;
+    right: 20%;
+    left: 20%;
+    padding: 2em 3em;
+    background-color:white;
+    overflow: auto;
+}
+
+.modal__close{
+    position: absolute;
+    top: .3em;
+    right: .3em;
+    padding: .3em;
+    cursor: pointer;
+}
