@@ -20,6 +20,15 @@ button{
     border: 1px solid #8d8d8d;
     background-color: white;
     font-size: 1em;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: blueviolet;
+    transition: 1s;
+    color:white;
+    transform: scale(1.1);
+    margin-left: 0.4em;
 }
 
 .top__banner{
@@ -63,4 +72,76 @@ button{
     right: .3em;
     padding: .3em;
     cursor: pointer;
+    font-size: 2em;
+    height: 1em;
+    width: 1em;
+    text-indent: 10em;/*добавляет отступ строки блока*/
+    overflow: hidden;
+    border: 0;
+}
+
+.modal__close::after{/*создаем крестик*/
+    position: absolute;
+    line-height: 0.5;
+    top: .2em;
+    left: .1em;
+    text-indent: 0;
+    content: "\00d7";
+}
+
+/*выпадающее меню*/
+
+.conteiner{
+    width: 80%;
+    max-width: 1000px;
+    margin: 1em auto;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    padding: .5em;
+    background-color: paleturquoise;
+}
+
+.dropdown__label{
+    padding: .5em 1.5em;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.dropdown__menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 2.1em;
+    min-width: 100%;
+    background-color: #eee;
+}
+
+.dropdown:hover .dropdown__menu{
+    display: block;
+}
+
+.submenu{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    border: 1px solid #999;
+}
+
+.submenu>li+li{
+    border-top: 1px solid #999;
+}
+
+.submenu>li>a{
+    display: block;
+    padding: .5em 1.5em;
+    background-color: #eee;
+    color: #369;
+    text-decoration: none;
+}
+.submenu>li>a:hover{
+    background-color: #fff;
+    transition: ease .8s;
 }
