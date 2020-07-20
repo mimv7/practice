@@ -100,14 +100,29 @@ button:hover{
 .dropdown{
     display: inline-block;
     position: relative;
-    padding: .5em;
     background-color: paleturquoise;
 }
 
+.dropdown__label:hover{
+    transition: ease 0.7s;
+    background-color: mediumseagreen;
+}
+
 .dropdown__label{
-    padding: .5em 1.5em;
+    padding: .5em  2em .5em 1.5em;/*немного отступа чтобы поместить треугольник*/
     border: 1px solid #ccc;
     background-color: #eee;
+}
+
+.dropdown__label::after{
+    content: " ";
+    position: absolute;
+    right: 1em;/*позиционировани абсолютного блока*/
+    top:1em;
+    border: .3em solid;
+    border-color: black transparent transparent;
+    /*применение верхней границы */
+
 }
 
 .dropdown__menu{
@@ -122,6 +137,13 @@ button:hover{
 .dropdown:hover .dropdown__menu{
     display: block;
 }
+
+.dropdown:hover .dropdown__label::after{
+    top: .7em;
+    border-color: transparent transparent black;
+
+}
+
 
 .submenu{
     padding-left: 0;

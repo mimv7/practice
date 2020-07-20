@@ -162,3 +162,22 @@ header,nav{
 .title *+*{
     margin-top: 1.5em;
 }
+
+/*:link
+:visited*/
+
+
+.site__nav>li>a:hover{
+    transition: 0.8s;
+    border-radius: 25px;
+    background-color: rgb(197, 61, 231);
+}
+
+.cta__button:hover{
+    transition: 0.8s;
+    border-radius: 25px;
+    background-color: rgb(197, 61, 231);
+}
+
+/*
+:active*/

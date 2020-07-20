@@ -150,6 +150,8 @@ body * + *{
 .site__nav>li>a:hover{
     background-color: rgb(124, 178, 250);
     color: rgb(148, 74, 0);
+    transition: ease 0.8s;
+    border-radius: 10px;
 }
 .site__nav>li>a:active{
     font-size: inherit;
