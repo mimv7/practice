@@ -13,7 +13,11 @@
         <header>
             <h2>МРВ</h2>
         </header>
-        <nav>
+        <nav class="menu" id="main__menu">
+            <button class="menu__toggle" id="toggle__menu" ><!--гамбургер-->
+                свернуть
+            </button>
+            <div class="menu__dropdown"><!--главменю-->
             <ul class="site__nav"><!--flex контейнер-->
                 <li><a href="index.html">Главная</a></li><!--флекс элементы-->
                 <li><a href="cascading.html">каскадность</a></li>
@@ -21,6 +25,7 @@
                 <li><a href="position.html">Позиционирование</a></li>
                 <li class="nav__right"><a href="https://vk.com/romanmels">О нас</a></li>
             </ul>
+            </div>
         </nav>
         <main class="flex">
             <div class="column__main tile">
@@ -29,6 +34,9 @@
                     Тысячи людей пользуются сайтами, а лишь некоторые делают сайты. 
                     Заходи в панель разработчика чтобы посмотреть как применяются те или иные свойства.
                 </p>
+                <div class="sourse__js">
+                    <a href="js.html" target="_blank">js подсказка</a>
+                </div>
             </div>
             <div class="column__sidebar">
                 <div class="tile">
@@ -60,6 +68,15 @@
 
         </main>
     </div>
-    
+    <script type="text/javascript">
+        (function(){
+            var button = document.getElementById('toggle__menu');
+            button.addEventListener('click',function(event){
+                event.preventDefault();
+                var menu = document.getElementById('main__menu');
+                menu.classList.toggle('is-open');
+            });
+        })();
+    </script>
 </body>
 </html>

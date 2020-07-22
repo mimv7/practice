@@ -68,6 +68,29 @@ body * + *{
 
 .column__main{
     flex: 2;/*сокращенная запись от flex:2 1 0%*/
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+p{
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+.sourse__js{
+    position: absolute;
+    align-self: flex-end;
+   bottom: 2em;
+}
+
+.sourse__js>a{
+    text-decoration: none;
+    color: rgb(248, 235, 50);
+    padding: 1em 2em;
+    background-color:rgb(247, 73, 20);
+    font-size: 1.2em;
+    font-weight: 800;
 }
 
 .column__sidebar{
@@ -157,5 +180,58 @@ body * + *{
     font-size: inherit;
 }
 
+/*@media(max-width:640){*/
+    
+.menu{
+    position: relative;
+}
+
+.menu__toggle{
+    position: absolute;
+    top: -1.2em;
+    right: .1em;
+    border: 0;
+    background-color: transparent;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu__toggle::after{
+    position: absolute;
+    top: 0.2em;
+    left: .2em;
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+    color: #3f2327;
+}
+
+.menu__dropdown{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+.menu.is-open .menu__dropdown{
+    display: block;
+} 
+
+@media(max-width:640px){
+    
+.site__nav>li+li{
+    margin-left: 0;
+}
+
+.site__nav{
+    display: block;
+}
 
 
