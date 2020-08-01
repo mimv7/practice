@@ -9,6 +9,28 @@
 }
 /*это должно быть всегда*/
 
+.go__up{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: rgb(34, 205, 248);
+    border: solid rgb(116, 116, 117) 3px;
+}
+
+.up{
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    left: 33%;
+    top: 18%;
+    z-index: 5;
+}
+
 body{
     background-color:rgb(207, 207, 207);
     /* фоновый цвет сайта */
@@ -46,7 +68,7 @@ li{
 
 
 
-.nav li a#featured{
+nav #main-nav li a#featured{
     background-color: orange;
     box-shadow: 10px 2px #6f9090;
 }
@@ -117,6 +139,10 @@ main{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.sidebar>a.ok{
+    color: rgb(247, 197, 105);
 }
 
 .button__link + .button__link{
@@ -272,6 +298,23 @@ a:visited{
 
 a:hover{
     text-decoration: underline;
+}
+
+#main-nav a:hover{
+    background-color: rgb(122, 221, 29);
+    border-radius: .5em;
+    transition: ease 0.5s;
+}
+
+nav #main-nav li a#featured:hover{
+    background-color: rgb(240, 24, 24);
+    border-radius: .5em;
+    transition: ease 0.5s;
+}
+
+a.go__up:hover{
+    background-color: rgb(49, 69, 252);
+    transition: ease-in 1s;
 }
 a:active{
     color: red;
