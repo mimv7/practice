@@ -1,5 +1,21 @@
+/*глобальное исправление*/
+:root{
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after{
+    box-sizing:inherit;
+}
+/*глобальное исправление*/
+
+
+body{
+    max-height: 760px;
+}
 #change__me{
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 400px;
     font: 24px arial;
@@ -9,13 +25,21 @@
     padding: 5px;
 }
 
+.nav{
+    display: flex;
+}
+
 .next{
     position: absolute;
     bottom: 50px;
+    justify-content: space-between;
+
 }
 
 a{
     text-decoration: none;
     font-size: 25px;
+    padding-left: 2em;
+    white-space: nowrap;
 }
 
