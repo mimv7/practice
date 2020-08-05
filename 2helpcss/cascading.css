@@ -63,6 +63,7 @@ li{
     border-radius: 2px;
     text-decoration: none;
     margin-right: 0.5em;
+    transition: ease 0.5s;
     
 }
 
@@ -71,6 +72,7 @@ li{
 nav #main-nav li a#featured{
     background-color: orange;
     box-shadow: 10px 2px #6f9090;
+    transition: ease 0.5s;
 }
 .page-header{
     width: 100%;
@@ -303,13 +305,11 @@ a:hover{
 #main-nav a:hover{
     background-color: rgb(122, 221, 29);
     border-radius: .5em;
-    transition: ease 0.5s;
 }
 
 nav #main-nav li a#featured:hover{
     background-color: rgb(240, 24, 24);
     border-radius: .5em;
-    transition: ease 0.5s;
 }
 
 a.go__up:hover{

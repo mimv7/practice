@@ -66,6 +66,7 @@ header,nav{
     background-color: #cc4c68;
     color: white;
     text-decoration: none;
+    transition: 0.8s;
 }
 
 .site__nav>li+li{
@@ -133,6 +134,7 @@ header,nav{
     color: white;
     padding: .5em 1em;
     text-decoration: none;
+    transition: 0.8s;
 }
 
 .main{
@@ -168,13 +170,11 @@ header,nav{
 
 
 .site__nav>li>a:hover{
-    transition: 0.8s;
     border-radius: 25px;
     background-color: rgb(197, 61, 231);
 }
 
 .cta__button:hover{
-    transition: 0.8s;
     border-radius: 25px;
     background-color: rgb(197, 61, 231);
 }

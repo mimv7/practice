@@ -98,6 +98,7 @@ p{
     position: absolute;
     align-self: flex-end;
    bottom: 2em;
+   transition:  2s;/*скорость перехода*/
 }
 
 .sourse__js>a{
@@ -110,15 +111,14 @@ p{
     white-space: nowrap;/*не переность строку*/
     text-align: center;/*текст в центре*/
     background-image:linear-gradient(130deg, rgb(238, 31, 117), rgb(230, 107, 107), rgb(247, 73, 20));/*линейный градиент на 130 градусов от 12 часов*/
-    border-radius: 5em;
+    border-radius: 2em;
     box-shadow: 0.1em 0.1em 0.5em rgb(255, 155, 115);
-    border: solid 5px rgba(250, 0, 0, 0.411);
+    border: solid 2px rgba(250, 0, 0, 0.411);
     border-style: solid dotted;/*вверх и низ сплошной, лево и право пунктирный*/
 }
 
 .sourse__js:hover{
-    background-image: radial-gradient(circle,  rgb(238, 31, 117), rgb(230, 107, 107), rgb(247, 73, 20) );
-    transition:  2s;/*скорость перехода*/
+    background-image: radial-gradient(circle,  rgb(238, 31, 117), rgb(230, 107, 107), rgb(247, 73, 20) ); 
     box-shadow: none;
     transform: translateY(-10px);/*поднимает блок вверх по оси y*/
 
@@ -263,26 +263,26 @@ p{
 } 
 
 
-@media(min-width: 641px){
+@media(min-width: 812px){
     .menu__toggle{
-        display: none;
+        display: none;/*скрываем панель навигации при ширине меньше 812 пикселей */
     }
     .menu__dropdown{
-        display: contents;
+        display: contents;/*показываем бургер меню при ширине меньше 812 пикселей*/
     }
     }
 
 
-@media(max-width:640px){
+@media(max-width:798px){/**/
     
 .site__nav>li+li{
-    margin-left: 0;
+    margin-left: 0;/*убираем отступа слева*/
 }
 
 .site__nav{
-    display: block;
-    width: 15em;
-    margin-left: auto;
+    display: block;/*делаем элемент блочным*/
+    width: 15em;/*ширина*/
+    margin-left: auto;/*отталкиваемся от левого края*/
 }
 
 @media(max-width:554px){
