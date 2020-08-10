@@ -11,7 +11,7 @@
 /*глобальное исправление*/
 
 body{
-    background-color: #709b90;
+    background-color: #8ce4ce;
     font-family: Helvetica,Arial, sans-serif;
 }
 
@@ -34,6 +34,7 @@ header{
     background-color: #5f4b44;
     list-style-type: none;/*убираем точки*/
     flex-wrap: wrap;/*чтобы блоки переносились*/
+    width: 100%;
 }
 
 .site__nav>li{
@@ -52,9 +53,11 @@ header{
     margin-left: 1.5em;/*от первого элемента --> на следующий элемент */
     /* знак + идет не вглубь дум а на сестринский элемент*/
 }
-.site__nav>.nav__right{
-    margin-left: auto;/*отталкивает элемент от левого бока*/
+
+.site__nav>li:last-child{
+    margin-left: auto;
 }
+
 
 .flex{
     display: flex;
@@ -67,7 +70,7 @@ header{
 
 .tile{
     padding: 1.5em;
-    background-color: rgb(245, 222, 222);
+    background-color: rgb(248, 231, 231);
 }
 
 .column__main{
@@ -84,9 +87,9 @@ h1{
 }
 
 h2{
-    text-align: center;
     font-size: 2em;
     color: rgb(117, 64, 32);
+    text-align: center;
 }
 
 p{
@@ -147,13 +150,20 @@ p{
     margin-top: 0;
     width: 100%;
 }
-
+ 
 .login__form button{
     margin-top: 1em;
-    border-top: 1px solid #cc6b5a;
-    background-color: white;
+    border: 1px solid #8f8f8f;
+    background-image: linear-gradient(180deg, white, rgb(163, 163, 163));
     padding: 0.5em 1em;
     cursor: pointer;
+    box-shadow:.1em .1em .5em grey ;
+
+}
+
+.login__form button:active{
+    background-image: linear-gradient(0deg, white, rgb(163, 163, 163));
+    box-shadow: none;
 }
 
 /*justify-content и align-items*/
@@ -219,7 +229,6 @@ p{
     font-size: inherit;
 }
 
-/*@media(max-width:640){*/
     
 .menu{
     position: relative;
@@ -252,23 +261,35 @@ p{
 
 .menu__dropdown{
     display: none;
-    position: absolute;
     right: 0;
     margin: 0;
     z-index: 5;
+    width: 100%;
 }
 
 .menu.is-open .menu__dropdown{
-    display: contents;
+    display:block;
 } 
 
+footer p{
+    font-size: 0.8em;
+    padding: 1em 2em 0.5em;
+    margin-bottom: 0.1em;
+    width: 100%;
+}
 
-@media(min-width: 812px){
+footer p:last-child{
+    padding: 0 2em;
+    margin-top: 0;
+}
+
+@media(min-width: 842px){
     .menu__toggle{
         display: none;/*скрываем панель навигации при ширине меньше 812 пикселей */
     }
     .menu__dropdown{
-        display: contents;/*показываем бургер меню при ширине меньше 812 пикселей*/
+        display: flex;/*показываем бургер меню при ширине меньше 812 пикселей*/
+        
     }
     }
 
@@ -281,7 +302,7 @@ p{
 
 .site__nav{
     display: block;/*делаем элемент блочным*/
-    width: 15em;/*ширина*/
+    width:15em;/*ширина*/
     margin-left: auto;/*отталкиваемся от левого края*/
 }
 
