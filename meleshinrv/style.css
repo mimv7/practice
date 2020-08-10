@@ -1,0 +1,45 @@
+:root{
+    box-sizing: border-box;/*убираем margin*/
+}
+
+*,
+::before,
+::after{
+    box-sizing:inherit;
+}
+
+body{
+    background-color:#EEEFF1;
+}
+
+header{
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 1.8em;
+    align-items: flex-start;
+}
+.header__logo{
+    font-family: 'Revalia', cursive;
+    font-size: 48px;
+    color: #34547A;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 2.88em;
+    white-space: nowrap;
+}
