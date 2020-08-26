@@ -196,7 +196,7 @@ h1{
     display: block;
     margin-top: 5em;
     background-image: linear-gradient(white,rgb(80, 228, 51)90%);
-    height: 40vh;
+    height: 45vh;
     transform: skewy(10deg);
 
 }
@@ -214,7 +214,7 @@ h1{
 
 .block2{
     height:35em;
-    background-image: url(image/лого.jpg);
+    background-image: url(image/logo.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin-top: -7em;

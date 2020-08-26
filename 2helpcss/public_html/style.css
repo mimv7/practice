@@ -1,0 +1,179 @@
+
+body{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* шапка */
+.header{
+    position: fixed;
+    background-color: #F11AAD;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.conteiner___header{
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 76px;
+}
+
+
+.logo{
+text-align: center;
+white-space: nowrap;
+}
+
+
+.logo___style{
+    font-family: 'Cardo', serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: white;
+    text-shadow:5px 5px 5px pink;
+}
+
+img{
+    pointer-events: none;
+     /*блокируем скачку картинок*/
+}
+
+a:link{
+    color: black;
+    font-size: 24px;
+}
+a:visited{
+    color:black;
+    font-size: 14px;
+}
+a{
+    color: black;
+}
+
+a{
+    padding-left: 15px;
+}
+
+.content___makeup{
+    padding-top:76px ;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    background-color:#E19DE4;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.col-4{
+    padding: 5px 10px 5px 10px;
+    max-width: 100%;
+}
+.logo___style2{
+    font-family: 'Cardo', serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color:blueviolet;
+    text-shadow:5px 5px 5px pink; 
+    text-align: center; 
+}
+
+.content___pediq{
+    padding-top:0px ;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    width: auto;
+    
+}
+.content___price{
+    text-align: center;
+    color:blueviolet;
+    text-shadow:5px 5px 5px pink;
+    background-color: #FFD9F4;
+    margin: 0px -15px;
+    padding-top: 5px;
+    
+}
+
+.eyelashes{
+    font-size: 45px;
+}
+
+.eyelashes2{
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.block___contacts{
+    display: flex;
+}
+.footer___contacts{
+    background-color: grey;
+    margin: 0px -15px;
+    padding: 10px 25px ;
+}
+
+.left___contacts{
+    width: 50%;
+}
+iframe.frame{
+   width: 50%;
+    z-index: 1000;
+    padding-top: 5%;
+}
+
+/* js  */
+h3{
+ color: maroon;
+ text-align: center;
+}
+
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+@media (max-width:540px){
+    .logo{
+        display: inline-block ;
+        width: 100%;
+    }
+    .makeup{
+        display: inline-block ;
+        width: 100%;
+    }
+    .pediq{
+        display: inline-block ;
+        width: 100%;
+    }
+    .price{
+        display: inline-block ;
+        width: 100%;
+    }
+    .contacts{
+        display: inline-block ;
+        width: 100%;
+    }
+    .conteiner___header{
+    display: unset;
+    }
+    .content___makeup{
+        padding-top: 300px;    
+    }
+    body{
+    background-color:#E19DE4;
+    }
+    }

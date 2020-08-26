@@ -20,25 +20,25 @@ body * + *{
 }
 
 header{
-    position: relative;
+    position: relative;/*содержится в относительном блоке*/
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1080px;/*ограничиваем ширину*/
     margin: 0 auto;/*двойной контейнер для центрирования контента*/
 }
 
 .site__nav{
-    display: flex;
-    padding: .5em;
-    background-color: #5f4b44;
+    display: flex;/*делаем контейнеры флексами*/
+    padding: .5em;/*внутренние отступы в полтекста*/
+    background-color: #5f4b44;/*цвет блока*/
     list-style-type: none;/*убираем точки*/
     flex-wrap: wrap;/*чтобы блоки переносились*/
-    width: 100%;
+    width: 100%;/*на всю ширину*/
 }
 
 .site__nav>li{
-    margin-top: 0;
+    margin-top: 0;/*нет внешнего отступа от верха*/
 }
 
 .site__nav>li>a{
@@ -55,7 +55,7 @@ header{
 }
 
 .site__nav>li:last-child{
-    margin-left: auto;
+    margin-left: auto;/*отталкиваемся от левого края*/
 }
 
 
@@ -233,31 +233,22 @@ p{
 .menu{
     position: relative;
 }
-
 .menu__toggle{
-    position: absolute;
-    top: -1.2em;
-    right: .1em;
-    border: 0;
-    background-color: transparent;
-    font-size: 3em;
-    width: 1em;
-    height: 1em;
-    line-height: 0.4;
-    text-indent: 5em;
-    white-space: nowrap;
-    overflow: hidden;
+    position:absolute;
+    top: -5em;
+    right: 2em;
+    background: #8ce4ce;
+    border: none;
 }
 
-.menu__toggle::after{
-    position: absolute;
-    top: 0.2em;
-    left: .2em;
+.menu__toggle span{
     display: block;
-    content: "\2261";
-    text-indent: 0;
-    color: #3f2327;
+    height: 3px;
+    width: 2em;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
 }
+
 
 .menu__dropdown{
     display: none;
