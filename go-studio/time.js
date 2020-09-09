@@ -16,6 +16,6 @@ function time() {
     else {
         greeting = 'К сожалению Мы закрыты. Перезвоните с утра!';
     }
-    document.write('<h3>' + greeting + '</h3>');
+    document.write('<h3 class= jsGreeting>' + greeting + '</h3>');
 }
 

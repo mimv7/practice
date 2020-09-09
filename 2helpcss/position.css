@@ -203,10 +203,10 @@ h1{
 
 .picture{
     display: block;
-    background-image: url(image/run.jpg);
+    background-image: url(image/мишка.jpg);
     background-repeat:no-repeat ;
     background-position: center;
-    height: 19em;
+    height: 15em;
     max-width: 100%;
     transform: skewy(-10deg);
 }
