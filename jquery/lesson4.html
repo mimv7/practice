@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/lesson3.css">
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    <header>
+        <h2>2011 Race Finished</h2>
+    </header>
+    <main>
+        <ul>
+            <li id="Male"><a href="#Male">Male finished</a></li>
+            <li id="Female"><a href="#Female">Female finished</a></li>
+            <li id="all"><a href="#all">All</a></li>
+        </ul>
+        <div id="Male">
+            <h4>Male finished</h4>
+            <ul id="finished_m"></ul>
+        </div>
+        <div id="Female">
+            <h4>Female finished</h4>
+            <ul id="finished_f"></ul>
+        </div>
+        <div id="all">
+            <h4>All finished</h4>
+            <ul id="finished_all"></ul>
+        </div>
+    </main>
+</body>
+<script src="jquery/my_script.js"></script>
+<script>
+    $('.tab-list').each(function(){                   // Находим список вкладок
+  var $this = $(this);                            // Сохраняем этот список
+  var $tab = $this.find('li.active');             // Получаем активный элемент списка
+  var $link = $tab.find('a');                     // Получаем ссылку из активной вкладки
+  var $panel = $($link.attr('href'));             // Получаем активную панель
+
+  $this.on('click', '.tab-control', function(e) { // При щелчке по вкладке
+    e.preventDefault();                           // Отменяем действие ссылки
+    var $link = $(this),                          // Сохраняем текущую ссылку
+        id = this.hash;                           // Получаем href нажатой вкладки
+
+    if (id && !$link.is('.active')) {             // Если уже не активны
+      $panel.removeClass('active');               // Деактивируем панель
+      $tab.removeClass('active');                 // Деактивируем вкладку
+
+      $panel = $(id).addClass('active');          // Делаем новую панель активной
+      $tab = $link.parent().addClass('active');   //  Делаем новую вкладку активной
+    }
+  });
+});
+</script>
+</html>

@@ -7,9 +7,15 @@
     <meta property="og:description" content="Салон- красоты Go-studio">
     <meta property="og:image" content="image/p001.jpg">
     <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
 </head>
 <body>
             <header>
+                <div class="burger__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
         <div class="logo__image"></div>
         <div class="navigation__menu">
             <a href="#about__Us">О Нас</a>
@@ -18,14 +24,28 @@
             <a href="#price">Прайс</a>
             <a href="#contacts">Контакты</a>
         </div>
-        <div class="burger__menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
             </header>
         <div class="inner__column">
-        <div if="about__Us"></div>
+        <div id="about__Us">
+            <p class="about__text">Имеет смысл выглядеть хорошо всегда. Ваш день – каждый день! Подарите себе ухоженный, стильный внешний вид с помощью мастеров салона красоты "Go-studio".</p>
+            <p>Мы рады предложить качественный уход за волосами. Большой популярностью пользуются мужские и женские стрижки. Каждый желающий может заказать процедуру окрашивания волос, чтобы придать своим волосам новые краски, сменить привычный оттенок либо поэкспериментировать со своим образом. В дополнение к стрижке мы предлагаем укладку, завивку волос, стайлинг. Быстрое тонирование седины позволит скрыть возрастные недостатки.</p>
+            <p>Мастера маникюра предлагают получить превосходный ногтевой сервис. На любой вкус наши специалисты точно подберут Ваш стиль.Выберите желаемое покрытие, определитесь с наличием уникального дизайна для ногтей, а затем убедитесь в том, что маникюр или педикюр в салоне заслуживает похвалы! Мы будем рады видеть счастливых клиентов, обладателей первоклассного аппаратного, европейского, классического маникюра или педикюра.
+            </p>
+            <p>Лучший салон красоты в г. Тула приглашает всех желающих! Отличный сервис и демократические расценки.</p>
+        </div>
+        <div class="contacts--form__form">
+            <form action="registration.php">
+                <h4>Записаться</h4>
+                <label for="">
+                    <p>ваше имя</p>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <p>выберите день</p>
+                    <input type="date">
+                </label>
+            </form>
+        </div>
         <div id="visage">
             <div class="conteiner__image">
                 <img src="image/p001.jpg" alt="">
@@ -66,8 +86,9 @@
             <p>Пучки на всю длину - 500</p>
             <p>Ленты - 400</p>
             <p>Выезд: +500 - 1000</p>
+        </div>
         <div id="contacts">
-            <script src="time.js"></script>
+            <script src="js/time.js"></script>
             <div class="container__contacts">
                 <div class="address">
                     <p>г.Тула, ул. Максима Горького 1 / Галкина 25</p>
@@ -75,11 +96,13 @@
                     <p>тел. 8-920-774-74-84</p>
                     <p>Работаем с пн-вс с 10 до 20</p>
                 </div>
-                <div class="map"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2333.156098926589!2d37.62380408687691!3d54.212724982076246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440997610b835%3A0x9b3b3281f6f07cea!2sGo-Studio!5e0!3m2!1sru!2sru!4v1603288627669!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
+            
         </div>
-    </div>
-    
-
+    <script src="js/burger.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

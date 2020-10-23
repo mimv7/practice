@@ -1,14 +1,4 @@
-/*глобальное исправление*/
-:root{
-    box-sizing: border-box;
-}
-
-*,
-::before,
-::after{
-    box-sizing:inherit;
-}
-/*глобальное исправление*/
+/*глобальное исправление*/:root{box-sizing: border-box;}*,::before,::after{box-sizing:inherit;margin: 0;padding: 0;}li{list-style-type: none;}a{text-decoration:none ;}/*глобальное исправление*/
 $color:rgb(145, 145, 145);
 
 body{

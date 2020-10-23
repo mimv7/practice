@@ -1,0 +1,35 @@
+/*глобальное исправление*/:root{box-sizing: border-box;}*,::before,::after{box-sizing:inherit;margin: 0;padding: 0;}li{list-style-type: none;}a{text-decoration:none ;}/*глобальное исправление*/
+
+
+body{
+    background-color: rgb(6, 6, 56);
+}
+.conteiner__light{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.conteiner__light img{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    position: absolute;
+    left: 20em;
+    top: 15em;
+}
+.slide{
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    overflow: hidden;
+}
+.slide img{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+}

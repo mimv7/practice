@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/lesson2.css">
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    <div class="conteiner__light">
+        <img src="image/lightning1.jpg" id="lightnin1" alt=""/>
+        <img src="image/lightning2.jpg" id="lightnin2" alt="">
+    </div>
+    <div class="box">
+        <div class="slide">
+            <img src="image/slide.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        lightninOne(5000);
+        lightninTwo(5000);
+        $(document).ready(function(){
+            let slideClick=0;
+            $('.slide').click(function(){
+                if(slideClick<4){
+                    $('.slide img').animate({left:'-=180px'},500);
+                    slideClick++;
+                }else{
+                    $('.slide img').animate({left:'0'},500);
+                    slideClick=0;
+                }
+                });
+        })
+        function lightninOne(t){
+            $('#lightnin1').fadeIn(500).fadeOut(1000).delay(3000).fadeIn(1500).fadeOut(500);
+            setTimeout('lightninOne()',t);
+        };
+        function lightninTwo(t){
+            $('#lightnin2').fadeIn(1500).fadeOut(1000).delay(8000);
+            setTimeout('lightninTwo()',t);
+        };
+        function randomPlace(){
+            let place=Math.floor((Math.random()*5)+5);
+        }
+    </script>
+</body>
+</html>

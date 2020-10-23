@@ -1,0 +1,38 @@
+/*глобальное исправление*/:root{box-sizing: border-box;}*,::before,::after{box-sizing:inherit;margin: 0;padding: 0;}li{list-style-type: none;}a{text-decoration:none ;}input{outline:none;}/*глобальное исправление*/
+
+body{
+    background-color: #000000;
+    color: white;
+    margin: 5px;
+}
+
+main{
+    color: #111;
+    width: 500px;
+    margin: 8px auto;
+}
+a{
+    color: thistle;
+    font-size: 18px;
+    font-weight: 900;
+}
+h4{
+    font-size: 25px;
+}
+main>li,#mail>ul>li{
+    list-style-type: none;
+    float: left;
+    font-size: 25px;
+}
+main{
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin: 1px 1px 1px 0;
+    color: #fff;
+    background-color: #444444;
+}
+main ul a:hover{
+    color: #fff;
+    background-color: #111;
+}

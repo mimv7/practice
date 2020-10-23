@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson1</title>
+    <link rel="stylesheet" href="style/lesson1.css">
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    <header>joker</header>
+    <main>
+        <div class="joker">
+            <img src="image/joker.jpg" alt="">
+            <p class="bullets"></p>
+        </div>
+        <div class="joker">
+            <img src="image/joker.jpg" alt="">
+            <p class="bullets"></p>
+        </div>
+        <div class="joker">
+            <img src="image/joker.jpg" alt="">
+            <p class="bullets"></p>
+        </div>
+        <div class="joker">
+            <img src="image/joker.jpg" alt="">
+            <p class="bullets"></p>
+        </div>
+    
+    </main>
+    <script>
+        $(document).ready(function(){
+            $('div').click(function(){
+                let bullets = Math.floor((Math.random()*6)+1);
+                let dicontMsg = 'You will get '+ bullets + ' bullets ';
+                $(this).find('p').append(dicontMsg);
+                $('div').each(function(){
+                    $(this).unbind('click');
+                })
+            })
+        })
+    </script>
+</body>
+</html>

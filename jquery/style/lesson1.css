@@ -1,0 +1,27 @@
+/*глобальное исправление*/:root{box-sizing: border-box;}*,::before,::after{box-sizing:inherit;margin: 0;padding: 0;}li{list-style-type: none;}a{text-decoration:none ;}/*глобальное исправление*/
+
+header{
+    font-size: 7em;
+    text-align: center;
+    color: rgb(255, 28, 96);
+    text-transform: uppercase;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+img{
+    padding: 1.5em;
+    background-color: blue;
+    border: solid yellow 5px;
+}
+p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(255, 0, 64);
+    text-overflow: ellipsis;
+}
