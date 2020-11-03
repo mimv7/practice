@@ -55,6 +55,7 @@ a{
     transition: 0.7s;
     border-bottom: solid #8500be 0.2em;
 }
+
 a::after{
     visibility: hidden;
     display: block;
@@ -95,9 +96,16 @@ p .about__text{
     padding: 1.5em;
     line-height: 5px;
 }
-
+.about__test{
+    color: black;
+    font-size: 15px;
+}
+#feedbac{
+    width: 100%;
+    height: 1em;
+}
 #visage{
-    padding-top: 4.5em;
+    padding-top: 1.5em;
 }
 .conteiner__image{
     display: flex;
@@ -164,13 +172,6 @@ input{
     margin-bottom: 2em;
 }
 
-
-a:link{
-   
-}
-a:visited{
-
-}
 
 a:hover::after{
     visibility: visible;
