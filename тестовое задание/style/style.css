@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/*глобальное исправление*/
+:root {
+  box-sizing: border-box; }
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+button {
+  cursor: pointer; }
+
+input {
+  cursor: pointer; }
+
+/*глобальное исправление*/
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Black.ttf); }
+button:hover {
+  background-color: #776763; }
+
+body {
+  background-color: #f6f5f3; }
+
+h1 {
+  font-family: Merriweather;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #343030; }
+
+h2 {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #343030; }
+
+h3 {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #343030; }
+
+h4 {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #343030; }
+
+h5 {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #343030; }
+
+h6 {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #A0A0A0; }
+
+header {
+  max-width: 1215px;
+  position: relative;
+  margin: 24px auto;
+  display: flex;
+  align-items: center; }
+
+header::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #E1E1E1;
+  position: absolute;
+  top: 75px; }
+
+ul {
+  display: flex; }
+
+li {
+  margin-left: 48px; }
+
+.header__search {
+  margin-left: auto; }
+
+form {
+  display: flex; }
+
+#search__input {
+  border-radius: 0;
+  height: 48px;
+  width: 400px;
+  font-family: Merriweather;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #f6f5f3;
+  border: 1px solid #E1E1E1;
+  padding-left: 15px;
+  color: #9F9F9F; }
+
+#search__input:focus {
+  color: #343030; }
+
+#search__button {
+  width: 120px;
+  height: 45px;
+  border-radius: 0;
+  background-color: #403432;
+  color: #fff; }
+
+main {
+  max-width: 1215px;
+  margin: 0 auto; }
+
+.main__description {
+  margin: 45px 0 35px; }
+
+.picture__block {
+  display: flex;
+  justify-content: space-between; }
+
+.product__name {
+  margin: 20px 36px 22px 24px; }
+
+.product__pay {
+  display: flex;
+  justify-content: space-around; }
+
+button {
+  width: 120px;
+  height: 45px;
+  border-radius: 0;
+  background-color: #403432;
+  color: #fff; }
+
+footer {
+  background-color: #ECEAEA; }
+
+.column__footer {
+  display: flex;
+  max-width: 1215px;
+  margin: 290px auto 0;
+  align-items: center;
+  padding: 24px 0; }
+
+.contacts__block {
+  display: flex;
+  margin-left: auto; }
+
+.contacts__content {
+  display: flex;
+  align-items: center; }
+
+.contacts__content--phone {
+  margin-left: 10px; }
+
+.contacts__place {
+  display: flex;
+  align-items: center;
+  margin-left: 50px; }
+
+.contacts__place--adress {
+  margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */
