@@ -103,7 +103,7 @@ form{
 #search__input{
     border-radius: 0;
     height: 48px;
-    width: 400px;
+    width: 296px;
     font-family: Merriweather;
     font-size: 14px;
     font-style: normal;
@@ -138,6 +138,13 @@ main{
 .picture__block{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1215px;
+
+}
+.product{
+    flex-basis: 20%;
 }
 .product__name{
     margin: 20px 36px 22px 24px;
