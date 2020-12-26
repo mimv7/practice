@@ -55,7 +55,7 @@ color:#343030;
 }
 h5{
     font-family: Merriweather;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px;
@@ -102,7 +102,7 @@ ul{
     display: flex;
 }
 li{
-    margin-left: 48px;
+    margin-left: 40px;
 }
 .header__search{
     margin-left: auto;
@@ -157,7 +157,7 @@ main{
     flex-basis: 20%;
 }
 .product__name{
-    margin: 20px 36px 22px 24px;
+    margin: 17px 36px 22px 24px;
 }
 .product__pay{
     display: flex;
@@ -178,7 +178,7 @@ footer{
 .column__footer{
     display: flex;
     max-width: 1215px;
-    margin: 290px auto 0;
+    margin: 343px auto 0;
     align-items: center;
     padding: 24px 0;
 }
